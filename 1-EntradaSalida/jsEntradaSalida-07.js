@@ -1,25 +1,61 @@
-/*
-Debemos lograr tomar Los numeros por ID ,
-transformarlos a enteros (parseInt),realizar la operación correcta y 
-mostrar el resulto por medio de "ALERT"
-ej.: "la Resta es 750"*/ 
-function sumar()
-{	
-	alert("ok");	
+/*******************
+Soroka Yago Div B ejercicio 7
+********************/
+/* reckoner */
+function sumar() { 
+	var input1;
+	var input2;
+	var addition;
+
+	input1 = txtIdNumeroUno.value;
+	input1 = parseInt(input1);
+	input2 = txtIdNumeroDos.value;
+	input2 = parseInt(input2);
+
+	addition = input1;
+	addition += input2;
+	alert("the answer is: " + addition);
 }
 
-function restar()
-{
-	
+function restar() {
+	var subtraction;
+
+	input1 = txtIdNumeroUno.value;
+	input1 = parseInt(input1);
+	input2 = txtIdNumeroDos.value;
+	input2 = parseInt(input2);
+
+	subtraction = input1;
+	subtraction -= input2;
+
+	alert("the answer is: " + subtraction);
 }
 
-function multiplicar()
-{ 
-	
+function multiplicar() { 
+	var multiplication;
+
+	input1 = txtIdNumeroUno.value;
+	input1 = parseInt(input1);
+	input2 = txtIdNumeroDos.value;
+	input2 = parseInt(input2);
+
+	multiplication = input1;
+	multiplication *= input2;
+
+	alert("the answer is: " + multiplication);
 }
 
-function dividir()
-{
+function dividir() {
+	var division;
+
+	input1 = txtIdNumeroUno.value;
+	input1 = parseInt(input1);
+	input2 = txtIdNumeroDos.value;
+	input2 = parseInt(input2);
+
+	division = input1;
+	division /= input2;
 	
+	alert("the answer is: " + division);
 }
 

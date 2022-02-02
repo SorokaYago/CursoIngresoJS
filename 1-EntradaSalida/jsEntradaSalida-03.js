@@ -1,12 +1,10 @@
-/*
-Debemos lograr tomar un dato por 'ID'
-y luego mostrarlo por 'Alert' al presionar el botón  'mostrar'*/
+/*******************
+Soroka Yago Div B
+********************/
 function mostrar()
 {
-	var nombreIngresado;
-	nombreIngresado=txtIdNombre.value;
-	alert("ok");
-
+	var userName;
+	userName = document.getElementById('txtIdNombre').value; //captura de datos
+	alert(userName); //muestra por alertde datos
+	console.log(userName);
 }
-
-

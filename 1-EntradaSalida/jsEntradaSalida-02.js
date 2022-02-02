@@ -1,8 +1,9 @@
-/*
-Debemos lograr tomar un nombre con 'prompt' 
-y luego mostrarlo por 'alert' al presionar el botón  'mostrar'*/
+/*******************
+Soroka Yago Div B
+********************/
 function mostrar()
 {
-	alert("ok");
+	var data;
+	data=prompt("don't enter in this link:", "https://EdEddyEddy.fandom.com/es/wiki/Tabl%C3%B3n");
+	alert(data);
 }
-
