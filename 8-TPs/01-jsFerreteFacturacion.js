@@ -3,7 +3,10 @@
 ********************/
 //promedio: sumar los 3 y dividirlos entre ellos
 function Sumar() {
-    var input1, input2, input3, addition; //se pueden poner de costado?
+    var input1
+    var input2; 
+    var input3;
+    var addition;
 
     input1 = txtIdPrecioUno.value;
     input1 = parseInt(input1);
@@ -33,10 +36,16 @@ function Promedio() {
     quantity = 3;
     average = addition / quantity;
 
-    alert("el promedio es: " + average);
+    alert("el promedio es: " + average.toFixed(2));
 }
 
 function PrecioFinal() {
+    var input1;
+    var input2;
+    var input3;
+    var addition;
+    var vat;
+    var grandTotal;
     //entendi que si no se definen variables al principio, las mismas se definen automaticamente al trabajarlas?
 
     input1 = txtIdPrecioUno.value;
@@ -50,6 +59,6 @@ function PrecioFinal() {
     vat = 1.21;
     grandTotal = addition * vat;
 
-    alert("el precio final, con iva, es: " + grandTotal);
+    alert("el precio final, con iva, es: " + grandTotal.toFixed(2));
 
 }

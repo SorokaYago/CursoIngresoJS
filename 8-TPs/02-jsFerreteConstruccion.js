@@ -1,29 +1,51 @@
-/*2.	Para el departamento de Construcción:
-A.	 mostrar la cantidad de alambre a comprar  si se ingresara el largo y el ancho de un terreno rectangular y se debe alambra con tres hilos de alambre.
-B.	mostrar la cantidad de alambre a comprar  si se ingresara el radio  de un terreno circular y se debe alambra con tres hilos de alambre.
-C.	Para hacer un contrapiso de 1m x 1m se necesitan 2 bolsas de cemento y 3 de cal, debemos mostrar cuantas bolsas se necesitan de cada uno para las medidas que nos ingresen.
-*/
+/*******************
+518732 Soroka Yago Div B ejercicio 7
+********************/
+function Rectangulo() {
+    var input1;
+    var input2;
+    var periodo;
+    var alambre;
 
-function Rectangulo () 
-{
-var input1;
-var input2;
-var periodo;
+    input1 = txtIdLargo.value;
+    input1 = parseFloat(input1);
+    input2 = txtIdAncho.value;
+    input2 = parseFloat(input2);
 
-input1 = txtIdLargo.value;
-input1 = parseInt(input1);
-input2 = txtIdAncho.value;
-input2 = parseInt(input2);
+    periodo = (input1 + input2) * 2;
+    alambre = periodo * 3;
 
-periodo = input1 * 2 + input2 * 2;
-
-alert("debe comprar: " + periodo + " metros de alambre.");
+    alert("debe comprar: " + alambre + " metros de alambre.");
 }
-function Circulo () 
-{
-	
+function Circulo() {
+    var perimetro;
+    var radio;
+    var alambre;
+
+    radio = txtIdRadio.value;
+    radio = parseFloat(radio);
+
+    perimetro = 2 * Math.PI * radio;
+    alambre = perimetro *3
+    alert("debe comprar " + alambre + " metros de alambre para la zona circular.")
+
 }
-function Materiales () 
-{
-	
+function Materiales() {
+    var input1;
+    var input2;
+    var area;
+    var cemento;
+    var cal;
+
+    input1 = txtIdLargo.value;
+    input1 = parseFloat(input1);
+    input2 = txtIdAncho.value;
+    input2 = parseFloat(input2);
+
+    area = input1 * input2;
+
+    cemento = area * 2;
+    cal = area * 3;
+
+    alert('para un contrapiso de ' + area + ' metros cuadrados necesito comprar '+ cemento + ' bolsas de cemento y ' + cal + ' bolsas de cal.');
 }

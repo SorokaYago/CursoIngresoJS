@@ -4,14 +4,12 @@
 /* discount */
 function mostrarAumento() {
 	var input
-	var percentage
 	var output
 
 	input = txtIdImporte.value;
 	input = parseInt(input);
-	percentage = input * 0.25;
-
-	output = input - percentage;
+	
+	output = input * 0.75; //borre una linea que me parecia al pepe
 	txtIdResultado.value = output;
 
 	/*
